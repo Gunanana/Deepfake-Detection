@@ -5,9 +5,9 @@
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 100px;
-}
+  }
   
-.upload-box {
+  .upload-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,67 +23,49 @@
     padding: 20px;
     transition: all 0.3s ease;  /* Smooth transition for all changes */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
-}
+  }
   
-/* Hover effect */
-.upload-box:hover {
+  /* Hover effect */
+  .upload-box:hover {
     background-color: rgba(240, 240, 240, 0.9);  /* Lighter transparent background */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);  /* Larger shadow */
     transform: scale(1.05);  /* Slight zoom-in effect */
-}
+  }
   
-/* Hover effect when clicking */
-.upload-box:active {
+  /* Hover effect when clicking */
+  .upload-box:active {
     transform: scale(0.98);  /* Shrinks when clicked */
-}
+  }
   
-.upload-icon {
+  .upload-icon {
     font-size: 3em;
     color: #666;
     margin-bottom: 10px;
     transition: color 0.3s ease;
-}
+  }
   
-/* Change color of icon on hover */
-.upload-box:hover .upload-icon {
+  /* Change color of icon on hover */
+  .upload-box:hover .upload-icon {
     color: #007bff;  /* Icon turns blue when hovering */
-}
+  }
   
-.upload-text {
+  .upload-text {
     font-size: 1em;
     color: #666;
     transition: color 0.3s ease;
-}
-  
-/* Change text color on hover */
-.upload-box:hover .upload-text {
-    color: #333;  /* Darker text when hovered */
-}
-  
-.upload-text span {
-    color: #007bff;
-    text-decoration: underline;
-}
-  
-.upload-input {
-    display: none;
-}
-
-/* src/components/Upload.css */
-.buffering-animation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5em;
-    color: #007bff;
-    animation: spin 1.5s infinite linear;
   }
   
-  /* CSS for spinning animation */
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-} 
+  /* Change text color on hover */
+  .upload-box:hover .upload-text {
+    color: #333;  /* Darker text when hovered */
+  }
   
+  .upload-text span {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .upload-input {
+    display: none;
+  }
   
