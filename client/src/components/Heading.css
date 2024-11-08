@@ -1,0 +1,26 @@
+/* src/components/Heading.css */
+
+.heading-section {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  
+  .main-heading {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .slogan {
+    font-size: 1.2em;
+    color: #ffffff;
+  }
+
+.heading-image {
+    display: block;
+    margin: 0 auto 20px;  /* Centers the image and adds space below it */
+    width: 100px;          /* Adjust the size */
+    height: auto;          /* Maintain aspect ratio */
+  }
+  

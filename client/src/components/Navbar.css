@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px; /* Add padding to give it more space */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+  
+.navbar-left {
+    display: flex;
+    align-items: center; /* This ensures the text stays aligned with the logo */
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* Adds space between the logo and the text */
+}
+
+.project-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-links a:hover {
+    color: #ccc;
+}
+  
