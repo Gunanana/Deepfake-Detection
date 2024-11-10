@@ -20,7 +20,7 @@ function Prediction({ prediction, imageUrl }) {
         {/* Image and Meter in separate rows */}
         <div className="image-meter">
           <UploadedImage imageUrl={tom_cruise} />
-          <PredictionMeter probability={prediction} />
+          <PredictionMeter probability={90} />
         </div>
       </div>
     </div>
