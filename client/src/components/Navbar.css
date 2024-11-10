@@ -5,7 +5,7 @@
     padding: 20px 30px; /* Add padding to give it more space */
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;

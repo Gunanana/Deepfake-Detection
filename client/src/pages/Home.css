@@ -29,11 +29,12 @@ body, html {
 }
 
 /* Content wrapper to layer content on top */
-.content {
+.home-content {
     position: relative;
     z-index: 2;
     color: #fff;
     padding-top: 60px; /* Ensures spacing below navbar */
+    padding: 2rem;
 }
 
 /* Heading and Upload */

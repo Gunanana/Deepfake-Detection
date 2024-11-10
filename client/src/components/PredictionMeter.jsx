@@ -1,41 +1,28 @@
+// src/components/PredictionMeter.jsx
 import React from 'react';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import './PredictionMeter.css';
 
-function PredictionMeter({ prediction }) {
-  const strokeDashoffset = (1 - prediction / 100) * 440; // Calculate the offset based on the prediction
-  let strokeColor = '#15B9A6'; // Default color (green)
-  
-  if (prediction > 70) strokeColor = '#FF3B30'; // Red if prediction > 70%
-  else if (prediction > 30) strokeColor = '#FFD700'; // Yellow if prediction > 30%
+function PredictionMeter({ probability }) {
+    return (
+      <div className="prediction-meter" 
+        style={{
+            width: 300
+        }}>
 
-  return (
-    <div className="prediction-meter">
-      <div className="semi-circle-container">
-        <svg className="semi-circle">
-          <circle 
-            className="semi-circle-background"
-            cx="50%" cy="50%" r="45%" 
-            strokeWidth="8"
-            stroke="#e0e0e0"
-            fill="transparent"
-          />
-          <circle
-            className="semi-circle-progress"
-            cx="50%" cy="50%" r="45%"
-            strokeWidth="8"
-            stroke={strokeColor} // Dynamic color based on prediction
-            fill="transparent"
-            strokeDasharray="440" 
-            strokeDashoffset={strokeDashoffset}
-            style={{ transition: 'stroke-dashoffset 1s ease-out' }} // Smooth animation
-          />
-        </svg>
+        <CircularProgressbar
+            value={probability}
+            text={`${probability}% AI`}
+            styles={buildStyles({
+                textSize: 10,
+                textColor: '#333',
+                pathColor: '#4caf50',
+                trailColor: '#f3f3f3',
+          })}
+        />
       </div>
-      <div className="risk-text">
-        <span>{Math.round(prediction)}%</span>
-      </div>
-    </div>
-  );
-}
+    );
+  }
 
 export default PredictionMeter;

@@ -1,5 +1,5 @@
 .goback-button {
-    position: fixed;
+    position: relative;
     top: 80px; /* Adjust top position */
     left: 20px;
     font-size: 20px;

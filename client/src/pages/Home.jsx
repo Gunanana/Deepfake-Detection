@@ -13,7 +13,7 @@ function Home() {
       <div className="background-image"></div>
 
       {/* Main content layer */}
-      <div className="content">
+      <div className="home-content">
         <Navbar />
         <Heading />
         <Upload />
