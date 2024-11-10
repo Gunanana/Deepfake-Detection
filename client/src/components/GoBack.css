@@ -13,11 +13,20 @@
     align-items: center;
     gap: 10px; /* Space between arrow and text */
     z-index: 100; /* Ensure button stays above other elements */
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
     margin-right: auto;
 }
-
+  /* Hover effect */
+  .goback-button:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);  /* Larger shadow */
+    transform: scale(1.05);  /* Slight zoom-in effect */
+  }
+  
+  /* Hover effect when clicking */
+  .goback-button:active {
+    transform: scale(0.98);  /* Shrinks when clicked */
+  }
 .arrow {
     font-size: 24px;
 }

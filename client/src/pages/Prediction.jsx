@@ -5,6 +5,7 @@ import PredictionMeter from '../components/PredictionMeter';
 import UploadedImage from '../components/UploadedImage';
 import './Prediction.css';
 import logo_white from '../assets/logo_white.svg';
+import tom_cruise from '../assets/tom_cruise.png';
 
 function Prediction({ prediction, imageUrl }) {
   return (
@@ -18,7 +19,7 @@ function Prediction({ prediction, imageUrl }) {
         
         {/* Image and Meter in separate rows */}
         <div className="image-meter">
-          <UploadedImage imageUrl={logo_white} />
+          <UploadedImage imageUrl={tom_cruise} />
           <PredictionMeter probability={prediction} />
         </div>
       </div>

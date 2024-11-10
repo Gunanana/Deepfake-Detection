@@ -1,9 +1,11 @@
 import React from 'react';
+import './UploadedImage.css'
+
 
 function UploadedImage({ imageUrl }) {
   return (
     <div className="uploaded-image">
-      <img src={imageUrl} alt="Uploaded" style={{ width: '10%', borderRadius: '8px', marginTop: '30px' }} />
+      <img src={imageUrl} alt="Uploaded"/>
     </div>
   );
 }

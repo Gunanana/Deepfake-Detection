@@ -8,7 +8,7 @@ function PredictionMeter({ probability }) {
     return (
       <div className="prediction-meter" 
         style={{
-            width: 300
+            width: 250
         }}>
 
         <CircularProgressbar
@@ -16,7 +16,7 @@ function PredictionMeter({ probability }) {
             text={`${probability}% AI`}
             styles={buildStyles({
                 textSize: 10,
-                textColor: '#333',
+                textColor: '#fff',
                 pathColor: '#4caf50',
                 trailColor: '#f3f3f3',
           })}

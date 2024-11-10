@@ -21,50 +21,12 @@
     justify-content: flex-start;
     gap: 2rem; /* Space between each element */
   }
+
   .image-meter {
+    margin-top: 130px;
     display: flex; /* Use flexbox to align items horizontally */
-    justify-content: space-between; /* Space between the image and the meter */
+    justify-content: flex-start; /* Space between the image and the meter */
     align-items: center; /* Align them vertically in the center */
     width: 100%;
-  }
-  
-  .image-row, .meter-row {
-    width: 100%;
-  }
-  
-  .navbar {
-    margin-bottom: 1rem; /* Optional: Adjust spacing */
-  }
-  
-  .go-back {
-    margin-bottom: 1rem; /* Optional: Adjust spacing */
-  }
-  
-  .prediction-image {
-    margin-top: 2rem;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .meter {
-    position: relative;
-    background: #f3f3f3;
-    height: 30px;
-    width: 100%;
-    margin: 1rem auto;
-    border-radius: 25px;
-    overflow: hidden;
-  }
-  
-  .meter span {
-    display: block;
-    height: 100%;
-    background-color: #4caf50;
-    text-align: center;
-    color: white;
-    line-height: 30px;
-    font-weight: bold;
   }
   
