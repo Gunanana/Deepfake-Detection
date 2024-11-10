@@ -1,0 +1,6 @@
+.upload-button:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);  /* Larger shadow */
+    transform: scale(1.1);  /* Slight zoom-in effect */
+    transition: all 0.3s ease;
+  }
+  

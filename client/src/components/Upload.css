@@ -3,8 +3,6 @@
 .upload-section {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 100px;
   }
   
   .upload-box {
@@ -49,10 +47,15 @@
     color: #007bff;  /* Icon turns blue when hovering */
   }
   
+  .upload-box.dragging {
+    background-color: rgba(230, 230, 255, 0.8); /* Highlight on drag */
+  }
+
   .upload-text {
     font-size: 1em;
     color: #666;
     transition: color 0.3s ease;
+    text-align: center; /* Center the text if needed */
   }
   
   /* Change text color on hover */
@@ -68,4 +71,28 @@
   .upload-input {
     display: none;
   }
+  
+  .upload-browse {
+    display: block; /* Forces it onto a new line */
+    margin-top: 5px; /* Optional spacing */
+    color: #007bff;
+  }
+  
+  .upload-browse span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+  
+  .upload-button-container {
+    margin-top: 20px; /* Space between upload section and button */
+    text-align: center;
+  }
+  
   

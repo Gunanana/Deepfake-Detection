@@ -1,25 +1,18 @@
 // src/App.jsx
 import React from 'react';
-import Navbar from './components/Navbar';
-import Heading from './components/Heading';
-import Upload from './components/Upload';
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Prediction from './pages/Prediction';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      {/* Static background image */}
-      <div className="background-image"></div>
-
-      {/* Main content layer */}
-      <div className="content">
-        <Navbar />
-        <Heading />
-        <Upload />
-        <Footer /> 
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/prediction" element={<Prediction />} />
+      </Routes>
+    </Router>
   );
 }
 

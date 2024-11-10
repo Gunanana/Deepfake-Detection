@@ -3,9 +3,12 @@
     background-color: #333; /* Dark background for the footer */
     color: white;
     padding: 20px;
-    position: relative; /* Position it absolutely at the bottom */
+    position: absolute; /* Position it absolutely at the bottom */
     width: 100%;
     text-align: center;
+    margin-top: auto;
+    bottom:0;
+    left: 0;
 }
 
 .footer-content {

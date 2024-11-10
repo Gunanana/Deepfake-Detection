@@ -1,0 +1,27 @@
+.goback-button {
+    position: fixed;
+    top: 80px; /* Adjust top position */
+    left: 20px;
+    font-size: 20px;
+    background-color: #333; /* Dark background for better visibility */
+    border: 2px solid #fff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between arrow and text */
+    z-index: 100; /* Ensure button stays above other elements */
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+.arrow {
+    font-size: 24px;
+}
+
+.goback-text {
+    font-size: 18px;
+}
